@@ -20,7 +20,8 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -28,17 +29,53 @@ header {
   font-weight: bold;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 0.85rem;
+.menu-toggle {
+  display: none;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
 }
 
-nav a:hover {
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1e293b;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #334155;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #334155;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
   color: #38bdf8;
 }
 
+.menu-toggle:checked ~ .nav-links {
+  display: flex;
+}
 
 .main-container {
   max-width: 850px;
@@ -130,7 +167,6 @@ h1 {
   margin-bottom: 8px;
 }
 
-/* Lists Style */
 ul {
   margin-left: 20px;
   margin-top: 5px;
@@ -169,15 +205,5 @@ footer {
   .about-section {
     flex-direction: column;
     text-align: center;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
-  nav a {
-    margin-left: 0;
   }
 }
