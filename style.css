@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.85rem;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+
+.main-container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #0284c7;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-image img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0284c7;
+}
+
+.about-content {
+  flex: 1;
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.highlight {
+  color: #0284c7;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.bio {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.box {
+  background-color: #f8fafc;
+  padding: 15px;
+  margin-top: 12px;
+  border-left: 4px solid #0284c7;
+  border-radius: 0 4px 4px 0;
+}
+
+.box h3 {
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* Lists Style */
+ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.skills-list, .hobbies-list {
+  list-style-type: square;
+}
+
+a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contact-details p {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  nav a {
+    margin-left: 0;
+  }
+}
