@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header Base Styling */
 header {
   background-color: #1e293b;
   color: #ffffff;
@@ -29,9 +30,12 @@ header {
   font-weight: bold;
 }
 
+/* Hide Checkbox */
 .menu-toggle {
   display: none;
 }
+
+/* --- 3-Lines Hamburger Icon Style --- */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -50,6 +54,7 @@ header {
   transition: all 0.3s ease;
 }
 
+/* --- Navigation Links Menu (Hidden by Default on All Devices) --- */
 .nav-links {
   display: none;
   flex-direction: column;
@@ -73,10 +78,12 @@ header {
   color: #38bdf8;
 }
 
+/* Toggle Menu Display when 3 Lines Icon is Clicked */
 .menu-toggle:checked ~ .nav-links {
   display: flex;
 }
 
+/* --- Main Layout --- */
 .main-container {
   max-width: 850px;
   margin: 30px auto;
@@ -91,6 +98,7 @@ section {
   border: 1px solid #e2e8f0;
 }
 
+/* Headings */
 h2 {
   color: #1e293b;
   margin-bottom: 20px;
@@ -109,6 +117,7 @@ h2::after {
   border-radius: 2px;
 }
 
+/* About Layout */
 .about-section {
   display: flex;
   align-items: center;
@@ -148,6 +157,7 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* Box Styling */
 .box {
   background-color: #f8fafc;
   padding: 15px;
@@ -167,6 +177,7 @@ h1 {
   margin-bottom: 8px;
 }
 
+/* Lists */
 ul {
   margin-left: 20px;
   margin-top: 5px;
@@ -193,6 +204,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -201,6 +213,7 @@ footer {
   font-size: 0.85rem;
 }
 
+/* Responsive adjustment for Mobile screens */
 @media (max-width: 650px) {
   .about-section {
     flex-direction: column;
